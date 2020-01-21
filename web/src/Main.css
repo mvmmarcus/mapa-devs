@@ -1,29 +1,16 @@
 main {
     flex: 1;
-    margin: 20px;
-    margin-top: 0px;
 }
 
-main ul {
-    display: grid;
+main ul { /* onde estao todos os "quadrados" dos usuarios */
+    display: grid; /* faz com que os quadrados de cada usuario fiquem um de 2 a 2 */
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     list-style: none;
 }
 
-li.dev-item {
-    background: #fff;
-    box-shadow: 0 0 14px 0 rgb(0, 0, 0.02);
-    border-radius: 2px;
-    padding: 20px;
-}
-
-li.dev-item header {
-
-}
-
-li.dev-item img {
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
+@media (max-width: 650px) { /* dimensionamento responsivo para celular */
+    main ul {
+        grid-template-columns: 1fr; /* os quadrados com usuarios deixam de ficar um do lado do outro */
+    }
 }

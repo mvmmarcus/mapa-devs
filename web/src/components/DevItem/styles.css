@@ -1,0 +1,51 @@
+li.dev-item { /* "quadrado" onde estao tds infos e img */
+    background: #fff;
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0.02);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+li.dev-item header { /* div onde estao o nome e as techs do usuario */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li.dev-item header img { /* avatar do usuario */
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+li.dev-item header .user-info { /* div das infos do usuario */
+    margin-left: 10px;
+}
+
+.user-info strong { /* nome do usuario */
+    display: block; /* faz com essa seja a unica informação na "linha" - sem isso as techs ficariam na frente do nome do usuário */
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info span { /* tecnologias */
+    font-size: 13px;
+    color: #999;
+    margin-top: 2px;
+}
+
+li.dev-item p { /* bio */
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0; /* 10 em cima e 10 em baixo e nada nas laterais*/
+}
+
+li.dev-item a { /* link pra acessar perfil do git */
+    color: #8e4dff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li.dev-item a:hover {
+    color: #5a2ea6;
+}
