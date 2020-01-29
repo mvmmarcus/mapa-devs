@@ -1,11 +1,9 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import 'react-native-gesture-handler';
-
 import Main from './pages/Main';
 import Profile from './pages/Profile';
-
+ 
 const Routes = createAppContainer(
     createStackNavigator({
         Main: {
@@ -18,7 +16,8 @@ const Routes = createAppContainer(
         Profile: {
             screen: Profile, //sempre tem que ter o msm nome
             navigationOptions: { // se der um ctrl+space aqui dentro, vc consegue ver todas as opções
-                title: 'Perfil do Github'
+                title: 'Perfil do Github',
+                headerTitleAlign: 'center',
             }
         },
     }, {
